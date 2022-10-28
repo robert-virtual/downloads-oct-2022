@@ -1,0 +1,16 @@
+[nodo0@localhost ~]$ start-dfs.sh                                                                        [10/21]
+Starting namenodes on [localhost]
+localhost: starting namenode, logging to /opt/hadoop/logs/hadoop-nodo0-namenode-localhost.localdomain.out
+localhost: starting datanode, logging to /opt/hadoop/logs/hadoop-nodo0-datanode-localhost.localdomain.out
+Starting secondary namenodes [0.0.0.0]
+0.0.0.0: starting secondarynamenode, logging to /opt/hadoop/logs/hadoop-nodo0-secondarynamenode-localhost.locald
+omain.out
+[nodo0@localhost ~]$
+[nodo0@localhost ~]$ hdfs dfs -put comandos-hadoop.txt /
+[nodo0@localhost ~]$
+[nodo0@localhost ~]$ hdfs dfs -ls /
+Found 3 items
+-rw-r--r--   1 nodo0 supergroup         28 2022-07-04 14:21 /comandos-hadoop.txt
+drwxr-xr-x   - nodo0 supergroup          0 2022-06-29 14:37 /temporal
+drwxr-xr-x   - nodo0 supergroup          0 2022-06-29 14:41 /temporal2
+[nodo0@localhost ~]$
